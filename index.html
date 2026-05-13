@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex,nofollow">
-    
-    <title>Discordサーバーへの招待</title>
-    <meta property="og:title" content="サーバーに参加して一緒に話そう！" />
-    
-    <meta property="og:description" content="ここをクリックしてDiscordサーバーに参加してください。どなたでも歓迎です！" />
-    
+    <script>
+        const discordUrl = "https://discord.gg/UJMaymPy"; 
+    </script>
+    <title>JOJI民の公園／fanServer</title>
+    <meta property="og:title" content="JOJI民の公園／fanServer" />
+    <meta property="og:description" content="創作したい方！みたい方！あそびにきてください" />
     <meta property="og:image" content="https://cdn.discordapp.com/icons/1369608160289099839/c02bee314acfaf67eeadf72cc0cd83a0.png?size=512" />
-    
     <meta name="twitter:card" content="summary_large_image" />
-    
-    <meta http-equiv="refresh" content="0;URL='ここにDiscordの招待URLを入れる'" />
-
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = discordUrl;
+            }, 500);
+        };
+    </script>
     <style>
-        body { font-family: sans-serif; background-color: #fffcfd; text-align: center; padding-top: 100px; color: #5d5d5d; }
+        body { font-family: sans-serif; background-color: #fffcfd; text-align: center; padding-top: 100px; color: #5d5d5d; margin: 0; }
         .loading-text { font-size: 18px; font-weight: bold; color: #ffb7ce; }
+        .btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: #ffb7ce; color: white; text-decoration: none; border-radius: 12px; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="loading-text">Discordへ移動中です...</div>
-    <p>画面が切り替わらない場合は <a href="ここにDiscordの招待URLを入れる">こちらをクリック</a> してください。</p>
-
-    <script>
-        // JavaScriptでも念のため自動転送をかけます
-        window.location.href = "ここにDiscordの招待URLを入れる";
-    </script>
+    <div class="loading-text">Discordへ移動中...</div>
+    <p>自動（じどう）で切り替わらない場合はボタンを押してください。</p>
+    <a id="jumpBtn" class="btn" href="${discordUrl}">サーバーに参加する</a>
 </body>
 </html>
